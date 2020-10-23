@@ -4,7 +4,7 @@ import obj from "./comment"
 
 function App() {
   return (
-    <div className="mt-5" > 
+    <div className="m-5" > 
       <Card obj={obj} />
     </div>
   );

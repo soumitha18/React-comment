@@ -19,7 +19,7 @@ export default function Card({ obj }) {
     }
 
     return (
-        <>
+        <div style={{ borderLeft: `${state ? "1px solid #1a1a1a" : ""}` }}>
             <div className="card mt-4 border-0" style={{ width: "30%" }}>
                 <div className="card-body">
                     <small>{`${obj.author} ${obj.points} Points ${timeago.format(obj.timestamp)}`}</small>
@@ -52,7 +52,7 @@ export default function Card({ obj }) {
                     :
                     null
             }
-        </>
+        </div>
     )
 }
 
